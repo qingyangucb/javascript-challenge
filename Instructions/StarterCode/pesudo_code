@@ -1,0 +1,27 @@
+var data_table = data;
+var user_input = d3.select("form-control").text();
+var button = d3.select("#filter-btn");
+button.on("click", eventfunction);
+
+function eventfunction:
+	var result = data.filter(obj=> obj.datetime === user_input);
+	result.forEach(fillfunction(obj) {
+		var date= obj.date;
+		var city= obj.city;
+		var state= obj.state;
+		var country= obj.country;
+		var shape= obj.shape;
+		var duration= obj.duration;
+		var comment= obj.comment;
+		append them to the corresonding table.
+
+	})
+
+switch(dropdown):
+  1. `date/time`: var date =
+  2. `city` var city =
+  3. `state` var state =
+  4. `country` var country =
+  5. `shape` var shape =
+
+var date_default = 9999;

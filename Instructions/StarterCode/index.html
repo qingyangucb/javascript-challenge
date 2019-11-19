@@ -34,13 +34,23 @@
               <div class="panel-body">
                 <form>
                   <div class="form-group">
-                    <ul class="list-group" id="filters">
+                    <select id="selDataset" onchange="getData(this.value)">
+                      <option value="date">date</option>
+                      <option value="city">city</option>              
+                      <option value="state">state</option>                 
+                      <option value="country">country</option>        
+                      <option value="shape">shape</option>                 
+                        <label for="date">Enter a comment</label>
+                        <input class="form-control" id="user_input" type="text" placeholder="1/11/2011">                     
+                    </select>
+<!--                      <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter a Date</label>
                         <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
                       </li>
-                    </ul>
+                    </ul> -->
                   </div>
+                  <button id="add-btn" type="button" class="btn btn-default">Add Filter</button>
                   <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
                 </form>
               </div>
